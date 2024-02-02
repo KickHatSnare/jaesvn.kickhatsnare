@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../assets/images/bg-image-home.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", Arial, sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+.welcome-screen-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: puff-out-center 1s cubic-bezier(0.165, 0.84, 0.44, 1) 2s
+    both;
+  animation: puff-out-center 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1s both;
+  pointer-events: none;
+}
+
+.welcome-screen-wrapper img {
+  filter: invert();
+  height: 4rem;
+}
+
+.welcome-screen-wrapper span {
+  margin-top: 1rem;
+}
+
+header {
+  position: absolute;
+
+  width: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+header div {
+  margin-left: 2rem;
+  width: 17rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+  user-select: none;
+  color: white;
+}
+
+header img {
+  filter: invert();
+  user-select: none;
+  height: 1.5rem;
+  margin-right: 2rem;
+}
+
+.social-media-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  margin-right: 2rem;
+  right: 0;
+}
+
+.social-media-wrapper a {
+  text-decoration: none;
+  user-select: none;
+  color: white;
+  font-size: 1.3rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+
+footer img {
+  filter: invert();
+  user-select: none;
+  height: 1.5rem;
+}
+
+@-webkit-keyframes puff-out-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
+  }
+}
+@keyframes puff-out-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
+  }
+}
