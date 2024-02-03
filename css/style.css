@@ -142,3 +142,31 @@ footer img {
     opacity: 0;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .welcome-screen-wrapper img {
+    height: 2.5rem;
+  }
+
+  header img {
+    height: 1rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .welcome-screen-wrapper img {
+    height: 2rem;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  header div {
+    margin-left: 0;
+  }
+
+  header img {
+    display: none;
+  }
+}

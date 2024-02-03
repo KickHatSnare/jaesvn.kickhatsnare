@@ -198,3 +198,53 @@ footer img {
     opacity: 0;
   }
 }
+
+@media only screen and (max-width: 1025px) {
+  .release-wrapper {
+    height: 19rem;
+    width: 16rem;
+  }
+
+  .release-wrapper img {
+    height: 13rem;
+  }
+
+  .release-content {
+    width: 13rem;
+  }
+}
+
+@media only screen and (max-width: 714px) {
+  .release-wrapper {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .welcome-screen-wrapper img {
+    height: 2.5rem;
+  }
+
+  header img {
+    height: 1rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .welcome-screen-wrapper img {
+    height: 2rem;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  header div {
+    margin-left: 0;
+  }
+
+  header img {
+    display: none;
+  }
+}

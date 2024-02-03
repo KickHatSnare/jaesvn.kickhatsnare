@@ -148,3 +148,57 @@ footer img {
     opacity: 0;
   }
 }
+
+
+@media only screen and (max-width: 1025px) {
+  .welcome-screen-wrapper img {
+    height: 3rem;
+  }
+
+  .about-wrapper p {
+    width: 26rem;
+    margin-left: 0;
+  }
+
+  .about-wrapper img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .welcome-screen-wrapper img {
+    height: 2.5rem;
+  }
+
+  .about-wrapper p {
+    width: 20rem;
+    font-size: 0.8rem;
+  }
+
+  header img {
+    height: 1rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .welcome-screen-wrapper img {
+    height: 2rem;
+  }
+
+  .about-wrapper p {
+    width: 17rem;
+    font-size: 0.8rem;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  header div {
+    margin-left: 0;
+  }
+
+  header img {
+    display: none;
+  }
+}
