@@ -74,15 +74,14 @@ header img {
 }
 
 .discography-wrapper {
-  height: 75%;
-  width: 75%;
+  height: 80%;
+  width: min(100vw, 60rem);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   overflow-y: scroll;
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  scrollbar-width: none; /* Firefox */
+  gap: 1rem;
 }
 
 .discography-wrapper::-webkit-scrollbar {
@@ -99,11 +98,6 @@ header img {
   background-color: rgba(240, 240, 240, 0.1);
   backdrop-filter: blur(5rem);
   border-radius: 2rem;
-  margin-right: 1.5rem;
-}
-
-.no-margin-right {
-  margin-right: 0;
 }
 
 .release-wrapper img {
